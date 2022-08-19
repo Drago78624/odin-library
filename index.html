@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Odin Library</title>
 </head>
 <body>
-    <h1>odin library</h1>
+    <header>
+        <nav>
+            <h1>Odin Library</h1>
+            <button class="btn" id="openModal">+ Add Book</button>
+        </nav>
+    </header>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <form>
+            <input type="text" placeholder="Title" class="input">
+            <input type="text" placeholder="Author" class="input">
+            <input type="number" placeholder="Pages" class="input">
+            <label for="has-read">
+                <input type="checkbox" id="has-read">
+                have you read it ?
+            </label>
+            <button class="btn">+ Add Book</button>
+          </form>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
