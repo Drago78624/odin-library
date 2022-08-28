@@ -22,11 +22,13 @@ window.onclick = function (event) {
 
 let myLibrary = [];
 
-function Book(title, author, pages, readStatus) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.readStatus = readStatus;
+class Book  {
+  constructor(_title, _author, _pages, _readStatus) {
+    this.title = _title;
+    this.author = _author;
+    this.pages = _pages;
+    this.readStatus = _readStatus;
+  }
 }
 
 function addBookToLibrary(e) {
